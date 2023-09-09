@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.all-page {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  background-color: rgb(102, 102, 187);
+  color: white;
+}
+
+.top-page-bar {
+  width: 100%;
+  display: flex;
+  height: 100px;
+  box-shadow: 0px 1px 15px;
+  background-color: white;
+  color: black;
+}
+
+.logo-container {
+  display: flex;
+  width: 40%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.main-container-page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-title {
+  align-self: center;
+  height: 50px;
+  font-weight: 300;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  min-height: 80px;
+  justify-content: center;
+  gap: 2%;
+}
+
+.search-content #input-search {
+  height: 30px;
+}
+
+.search-content #input-search:focus {
+  outline: none;
+}
+
+.row .search-content #search-code-button {
+  border-radius: 5px;
+  background: none;
+  width: 100px;
+  height: 28px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+.result-search-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.lainp-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lainp-container:hover,.lainp-container input, .lainp-container label  {
+  cursor: pointer;
+}
+
+.lainp-container input {
+  height: 3px;
+  width: 100%;
+  transition: 800ms;
+  border: 1px solid black;
+}
+
+.lainp-container .input-show{
+  height: 40px;
+  border: none;
+  background-color: white;
+}
+
+
+
+

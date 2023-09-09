@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumindo API CEP</title>
+  <link rel="stylesheet" href="./src/stylecheets/style.css">
+  <link rel="stylesheet" href="./src/stylecheets/responsiveness.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="./src/script/index.js" defer></script>
+</head>
+<body>
+  <div class="all-page">
+    <header class="top-page-bar">
+      <div class="logo-container">
+        <div class="logo">
+          <h1>CEP SEARCH</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container-page">
+      <div class="row">
+        <div class="search-content">
+          <label for="input-search">Insira o CEP:</label>
+          <input type="text" id="input-search">
+          <button id="search-code-button">pesquisar</button>
+        </div>
+      </div>
+
+      <div class="result-search-content">
+        <h2 class="sub-title">resultado</h2>
+        <div class="row">
+          <div class="lainp-container">
+            <label for="zipcode">CEP</label>
+            <input type="text" id="zipcode" required readonly>
+          </div>
+          <div class="lainp-container">
+            <label for="street">RUA:</label>
+            <input type="text" id="street" required readonly>
+          </div>
+          <div class="lainp-container">
+            <label for="complement">COMPLEMENTO:</label>
+            <input type="text" id="complement" required readonly>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="lainp-container">
+            <label for="neighborhood">BAIRRO:</label>
+            <input type="text" id="neighborhood"  required readonly>
+          </div>
+          <div class="lainp-container">
+            <label for="locality">LOCALIDADE:</label>
+            <input type="text" id="locality" required readonly>
+          </div>
+          <div class="lainp-container">
+            <label for="uf">UF:</label>
+            <input type="text" id="uf" required readonly>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
